@@ -1,0 +1,367 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all 0.2s ease;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    background: #e8491d;
+    color: #fff;
+    padding: 14px;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+button, input {
+    outline: none;
+    border: none;
+}
+
+button:focus, input:focus {
+    box-shadow: none;
+}
+
+header {
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #35424a;
+    height: 100px;
+    color: #fff;
+    border-bottom: 4px solid #e8491d;
+}
+
+.logo h2 {
+    font-weight: bold;
+    font-size: 30px;
+    cursor: pointer;
+}
+.logo h2 span {
+    color: #e8491d;;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.nav-menu .nav-link {
+    color: #fff;
+    cursor: pointer;
+    margin: 0 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.nav-menu .nav-link:hover {
+    color: #e8491d;
+}
+
+.nav-link.active {
+    color: #e8491d;
+}
+
+.banner {
+    background-image: url('https://www.floggingsails.com/images/showcase.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    height: 500px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner h1 {
+    font-size: 52px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 4rem;
+}
+
+.banner p {
+    display: block;
+    text-align: center;
+    margin:20px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5rem;
+    
+}
+
+.newsletter {
+    background: #35424a;
+    color: #fff;
+    width: 100%;
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.newsletter .input {
+    display: flex;
+    align-items: center;
+}
+
+.newsletter .input input {
+    padding: 14px 12px;
+    width: 300px;
+}
+
+.newsletter .input input:focus {
+    border: 2px solid #35424a;
+    border-radius: 4px;
+
+}
+
+/* .newsletter .input button {
+    background: #e8491d;
+    color: #fff;
+    padding: 14px;
+    margin-left: 8px;
+} */
+
+.showcase {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+}
+
+.showcase .box {
+    margin: 50px 20px;
+}
+
+.showcase img {
+    height: 100px;
+    margin: 10px 0;
+}
+
+.showcase h3 {
+    margin-bottom: 10px;
+}
+
+.showcase p {
+    text-align: center;
+}
+
+footer {
+    background: #e8491d;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.newsletter.about {
+    position: relative;
+}
+
+.aboutus {
+    display: flex;
+    padding: 30px 60px;
+}
+
+.aboutus article {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.aboutus article h4 {
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.aboutus p {
+    margin: 6px 0;
+    font-size: 16px;
+}
+
+.aboutus .description {
+    background: #35424a;
+    color: #fff;
+    padding: 20px;
+}
+
+.aboutus article, .aboutus aside {
+    margin: 0 20px;
+}
+
+.aboutus aside {
+    width: 50%;
+}
+
+/* services */
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+}
+
+.services .box1 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.services .box1 h3 {
+    font-size: 22px;
+}
+
+.services .box1 .box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    background: #e6e6e6;
+    padding: 40px;
+    width: 80%;
+}
+
+.services .box1 .box p {
+    margin: 10px 0;
+}
+
+.services .box1 .box .price {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.services .box1, .services .box2 {
+    margin: 0 40px;
+}
+
+.box2{
+    background: #35424a;
+    color: #fff;
+    padding: 20px;
+    height: 420px;
+    width: 50%;
+}
+
+/* .services .box2 form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+} */
+
+.services .box2 form .form-control {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 10px
+}
+
+.services .box2 form .form-control input,
+.services .box2 form .form-control textarea {
+    padding: 12px 4px;
+    margin: 4px 0 ;
+}
+
+
+
+
+.services .box2 form button {
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+    }
+    .banner p {
+        font-size: 14px;
+    }
+
+
+    .banner h1 {
+        font-size: 32px;
+        line-height: 3rem;
+        margin-top: -5rem;
+    }
+
+    .newsletter {
+        flex-direction: column;
+        gap: 4px;
+        padding: 10px 0;
+    }
+
+    .newsletter .input {
+        flex-direction: column;
+        width: 100%;
+        padding: 10px 4px;
+    }
+
+    .newsletter .input button {
+        margin-top: 10px;
+        width: 50%;
+
+    }
+
+    .showcase {
+        grid-template-columns: 1fr;
+        width: 100%;
+        text-align: center;
+    }
+
+    .showcase .box {
+        margin: 30px 28px;
+    }
+    .aboutus {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aboutus aside {
+        width: 100%;
+        margin-top: 40px;
+    }
+    .services {
+        width: 100%;
+        align-items: center;
+        margin: auto;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .services .box1 {
+        align-items: center;
+        width: 100%;
+    }
+
+    .services .box2{
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
